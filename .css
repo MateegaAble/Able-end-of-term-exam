@@ -1,27 +1,61 @@
-
-.body{
-    font-size: 12;
-    color: black;
-  
-h1{
-    text-decoration: initial;
-    font-style: italic;
-    font-size:50%;
+*{
+    margin: 0;
+    padding 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+.head{
+    margin:0;
+    padding: 0;
+    font-size: 30px;
+    font-style: oblique;
+}
+.introduction{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(234, 238, 22, 0.7),rgba(4,9,30,0.7)),url(IMAGES/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative
+}
+p{
+    color: red;
+}
+nav{
+    display:flex;
+    padding: 0% 0%;
+    justify-content:space-between;
+    align-items:center;
+}
+.navi-links{
+    flex:0px ;
     text-align:justify;
 }
-.header{
-     text-decoration: initial;
-    font-style: italic;
-    font-size: 50%;
-    text-align: justify;
+.navi-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px 2px;
+    position: relative;
 }
-.p{
-     text-decoration: initial;
-    font-style: italic;
-    font-size: 50%;
-    text-align: justify;
-    background-color: rgb(79, 192, 23);
+.navi-links ul li{
+    color: black;
+    text-decoration: blue;
+    font-size: 10px;
 }
-
-
-
+.navi-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: maroon;
+    display: block;
+    margin: auto;
+    transition: 2s;
+}
+.navi-links ul:hover{
+    transform-style: flat ;
+    transition: 1s;
+    color-scheme: black;
+}
+.navi-links ul li:hover::after{
+    width: 50px ;
+}
